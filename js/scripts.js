@@ -1,5 +1,15 @@
 $(document).ready(function() {
-  var question1 = $("#question1").val();
-  var question2 = $("#question2").val();
-  var question3 = $("#question3").val();
+  $("#transformer form").submit(function() {
+    var transformer = ["question1", "question2", "demo"];
+
+    transformer.forEach(function(blank){
+      var userInput = $("input." + transformer).val();
+      console.log(userInput);
+      $("." + transformer).text(userInput).val();
+    });
+
+  $("#result").show();
+
+  event.preventDefault();
+  });
 });
