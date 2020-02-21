@@ -1,0 +1,13 @@
+body {
+  background-color: #FA7655;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+#result {
+  display: none;
+}
